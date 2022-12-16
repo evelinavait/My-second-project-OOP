@@ -164,17 +164,17 @@ Patobulinta 1-osios užduoties programos realizacija (`v1.1` versija)
 > Šiuo atveju tarp skirtingų flagų nėra didelio skirtumo. Tačiau, yra svarbu kompiliuoti su optimizacija, nes be jos programos veikimas yra labai lėtas.
 
 **Programos veikimo laiko palyginimas** (`struc` vs `class`)
-|vector|1000|10 000 |100 000
+||1000|10 000 |100 000
 |:---:|:---:|:---:|:---:
-|struct| 0.01|0.07|0.91 |
-|class|0.01|0.06 |0.07|
+|struct| 0.01|0.06|0.91 |
+|class|0.01|0.07 |0.07|
 
 **Eksperimentinė analizė pagal optimizavimo flag'us**
 ||1000|10 000 |100 000
 |:---:|:---:|:---:|:---:
-|O1|0.01|0.02 |0.2|
-|O2|0.01|0.02 |0.2|
-|O3|0.01|0.01 |0.1|
+|O1|0.01|0.01 |0.08|
+|O2|0.01|0.01 |0.07|
+|O3|0.01|0.01 |0.06|
 
 ### Išvados ###
 * Pakeitus `struct Student` į `class Student` realizacijos sparta (veikimo laikas) beveik nepasikeitė.
