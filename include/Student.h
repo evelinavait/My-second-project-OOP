@@ -1,3 +1,5 @@
+#include "../calculations.h"
+
 #ifndef STUDENT_H
 #define STUDENT_H
 
@@ -18,24 +20,30 @@ using namespace std;
 class Student
 {
     public:
-        Student(string line);
+        Student(string line); //constructor
+        Student(int id, int grades);
 
-        //Student() : exam_(0) { }  // default konstruktorius
-        //Student(std::istream& is);
-        inline std::string firstName() const { return firstName_; }    // get'eriai, inline
-        inline std::string lastName() const { return lastName_; }  // get'eriai, inline
-        float Final();  // get'eriai //i fcija paduodam grades -> iskvieciam final
-        //std::istream& readStudent(std::istream&);  // set'eria
+        // getters, inline
+        inline std::string firstName() const { return firstName_; }
+        inline std::string lastName() const { return lastName_; }
+        inline int HowManyGrade() const { return grade_.size(); }
+        inline int GetGrade(int number) const { return grade_[number]; }
+        float Final();
+
+        // setters
+        void setFirstName(string& v) { firstName_ = v; }
+        void setLastName(string& p) { lastName_ = p; }
+        void setExam(int& e) { exam_ = e; }
 
     private:
-        string firstName_; //globalus kintamasis
+        string firstName_; //global variable
         string lastName_;
         vector<int> grade_;
         float exam_;
-        //float final_;
-        int median_;
 };
 
-//bool compare(const Student&, const Student&);
+bool compareName(const Student& a, const Student& b);
+
+bool compareFinal(const Student& a, const Student& b);
 
 #endif // STUDENT_H

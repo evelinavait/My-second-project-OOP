@@ -1,9 +1,17 @@
 #include "Student.h"
 
-//Student::Student(std::istream& is)
-//{
-//    cout << "veikia";//ctor
-//}
+Student::Student(int id, int grades)
+{
+    firstName_ = "V" + ToString(id);
+    lastName_ = "P" + ToString(id);
+    exam_ = (rand() % 10) + 1;
+    for(int i=0; i<grades; i++)
+    {
+        int g = (rand() % 10) + 1;
+        grade_.push_back(g);
+    }
+}
+
 Student::Student(string line)
 {
     istringstream st(line);
@@ -30,4 +38,10 @@ float Student::Final()
     float vid = sum/(float)cGrades;
 
     return (0.6 * exam_) + (vid * 0.4);
+}
+
+bool compareName(const Student& a, const Student& b)
+{
+	if (a.firstName() == b.firstName()) return a.lastName() < b.lastName();
+	return a.firstName() < b.firstName();
 }
