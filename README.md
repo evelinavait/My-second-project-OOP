@@ -164,6 +164,10 @@ Patobulinta 1-osios užduoties programos realizacija (`v1.1` versija)
 > Šiuo atveju tarp skirtingų flagų nėra didelio skirtumo. Tačiau, yra svarbu kompiliuoti su optimizacija, nes be jos programos veikimas yra labai lėtas.
 
 **Programos veikimo laiko palyginimas** (`struc` vs `class`)
+||1000|10 000 |100 000|1 000 000
+|:---:|:---:|:---:|:---:|:---:
+|struct| 0.027|0.005|0 |0.002|
+|class|0.173|0.062 |0.004|0.015|
 
 **Eksperimentinė analizė pagal optimizavimo flag'us**
 ||1000|10 000 |100 000|1 000 000
