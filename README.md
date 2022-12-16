@@ -170,11 +170,11 @@ Patobulinta 1-osios užduoties programos realizacija (`v1.1` versija)
 |class|0.173|0.062 |0.004|0.015|
 
 **Eksperimentinė analizė pagal optimizavimo flag'us**
-||1000|10 000 |100 000|1 000 000
-|:---:|:---:|:---:|:---:|:---:
-|O1| 0.027|0.005|0 |0.002|
-|O2|0.173|0.062 |0.004|0.015|
-|O3|2.052|0.884 |0.056 |0.233|
+||1000|10 000 |100 000
+|:---:|:---:|:---:|:---:
+|O1|0.01|0.01 |0.08|
+|O2|0.01|0.01 |0.07|
+|O3|0.01|0.01 |0.06|
 
 ### Išvados ###
 * Pakeitus `struct Student` į `class Student` realizacijos sparta (veikimo laikas) beveik nepasikeitė.
