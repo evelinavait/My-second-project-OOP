@@ -164,12 +164,11 @@ Patobulinta 1-osios užduoties programos realizacija (`v1.1` versija)
 > Šiuo atveju tarp skirtingų flagų nėra didelio skirtumo. Tačiau, yra svarbu kompiliuoti su optimizacija, nes be jos programos veikimas yra labai lėtas.
 
 
-|Įrašai|1000|10 000 |100 000|1 000 000
+||1000|10 000 |100 000|1 000 000
 |:---:|:---:|:---:|:---:|:---:
-|1000 įrašų| 0.027|0.005|0 |0.002|
-|10000 įrašų|0.173|0.062 |0.004|0.015|
-|100000 įrašų|2.052|0.884 |0.056 |0.233|
-|1000000 įrašų|22.406|10.739|0.614|1.417|
+|O1| 0.027|0.005|0 |0.002|
+|O2|0.173|0.062 |0.004|0.015|
+|O3|2.052|0.884 |0.056 |0.233|
 
 ### Išvados ###
 * Pakeitus `struct Student` į `class Student` realizacijos sparta (veikimo laikas) beveik nepasikeitė.
