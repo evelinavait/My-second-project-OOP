@@ -150,6 +150,20 @@ Patobulinta 1-osios užduoties programos realizacija (`v1.0` versija)
 > Programos veikimo greitis beveik nepriklauso nuo to, ar yra panaudota struktūra, ar klasė.
 > Šiuo atveju tarp skirtingų flagų nėra didelio skirtumo. Tačiau, yra svarbu kompiliuoti su optimizacija, nes be jos programos veikimas yra labai lėtas.
 
+# v1.1.1 versija
+
+Patobulinta 1-osios užduoties programos realizacija (`v1.1` versija)
+- [x] Vietoje struktūros `struct Student`, jos pagrindu, vadovaujantis "gerosiomis praktikomis", sukuriama klasė `class Student`.
+- [x] Palyginama abiejų programų: naudojančios `struct` (ankstesnis darbas) ir naudojančios `class` tipą (dabartinė realizacija) sparta (veikimo laikas), naudojant vieną fiksuotą konteinerį, pvz. vektorių, pačią greičiausią dalijimo strategiją ir 100 000 ir 1 000 000 dydžio failus
+- [x] Atliekama eksperimentinė analizė priklausomai nuo kompiliatoriaus optimizavimo lygio, nurodomo per flag'us: `O1, O2, O3`.
+
+> Programos veikimo greitis beveik nepriklauso nuo to, ar yra panaudota struktūra, ar klasė.
+> Šiuo atveju tarp skirtingų flagų nėra didelio skirtumo. Tačiau, yra svarbu kompiliuoti su optimizacija, nes be jos programos veikimas yra labai lėtas.
+
+### Išvados ###
+* Pakeitus `struct Student` į `class Student` realizacijos sparta (veikimo laikas) beveik nepasikeitė.
+* Visi flag'ai paspartino programos veikimą, tačiau žemiausio lygio (O3) flag'as buvo sparčiausias. Visgi, ženklaus skirtumo tarp jų, testuojant failus, nepastebėta.
+
 ## Įdiegimo instrukcija ##
 1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
