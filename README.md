@@ -163,8 +163,9 @@ Patobulinta 1-osios užduoties programos realizacija (`v1.1` versija)
 > Programos veikimo greitis beveik nepriklauso nuo to, ar yra panaudota struktūra, ar klasė.
 > Šiuo atveju tarp skirtingų flagų nėra didelio skirtumo. Tačiau, yra svarbu kompiliuoti su optimizacija, nes be jos programos veikimas yra labai lėtas.
 
-Programos veikimo laiko palyginimas (`struc` vs `class`)
-Eksperimentinė analizė pagal optimizavimo flag'us
+** Programos veikimo laiko palyginimas (`struc` vs `class`)
+
+** Eksperimentinė analizė pagal optimizavimo flag'us
 ||1000|10 000 |100 000|1 000 000
 |:---:|:---:|:---:|:---:|:---:
 |O1| 0.027|0.005|0 |0.002|
