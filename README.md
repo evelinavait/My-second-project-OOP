@@ -173,7 +173,7 @@ Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operat
 * Vietoj turimos `Student` klasės sukuriamos dvi: bazinė klasė, skirta bendrai aprašyti žmogų `Human` ir tuomet iš jos išvestinė (derived) klasę - `Student`.
 * Žmogui `Human` skirta bazinė klasė yra abstrakčioji klasė, t. y. nėra galima sukurti žmogaus tipo objektų, o tik objektus gautus iš jos išvestinių klasių.
 
-# [v1.5.1 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v1.5.1)
+# v1.5.1 versija
 Patobulinta `v1.5` versijos realizacija
 
 Nuo `v1.5.1` versijos užduotys atliekamos naudojantis Visual Studio programinės įrangos aplinka.
