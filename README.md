@@ -173,8 +173,17 @@ Taip pat turimai `Student` klasei realizuojama įvesties/išvesties << operat
 * Vietoj turimos `Student` klasės sukuriamos dvi: bazinė klasė, skirta bendrai aprašyti žmogų `Human` ir tuomet iš jos išvestinė (derived) klasę - `Student`.
 * Žmogui `Human` skirta bazinė klasė yra abstrakčioji klasė, t. y. nėra galima sukurti žmogaus tipo objektų, o tik objektus gautus iš jos išvestinių klasių.
 
+# [v1.5.1 versija](https://github.com/evelinavait/My-second-project-OOP/releases/tag/v1.5.1)
+Patobulinta `v1.5` versijos realizacija
+
+Nuo `v1.5.1` versijos užduotys atliekamos naudojantis Visual Studio programinės įrangos aplinka.
+
+* Vietoj turimos `Student` klasės sukuriamos dvi: bazinė klasė, skirta bendrai aprašyti žmogų `Human` ir tuomet iš jos išvestinė (derived) klasę - `Student`.
+* Priešingai nuo `v1.2.1` versijos sukurtas numatytasis (angl. default) `Student` klasės konstruktorius, patobulinta įvesties/išvesties << operatorių realizacija.
+* `v1.5` versijoje žmogui `Human` skirta bazinė klasė buvo abstrakčioji klasė, todėl v1.5.1 versijoje `Human` klasė patobulinta, t. y. nėra galima sukurti žmogaus tipo objektų, o tik objektus gautus iš jos išvestinių klasių.
+
 ## Įdiegimo instrukcija ##
-1. Parsisiųsti norimą programos versijos (v1.0) kodą iš Releases;
+1. Parsisiųsti norimą programos versijos kodą iš Releases;
 2. Kodą sukompiliuoti per komandinę eilutę arba pasirinktą IDE.
 Naudojant `CMakeLists.txt`:
 ```
@@ -182,10 +191,11 @@ cmake .
 cmake --build .
 ```
 ## Naudojimosi instrukcija ##
-1. Į konsolę įvedamas studentų skaičius (n), t. y. kokį failą norima generuoti. Taip sugeneruojami atsitiktiniai studentų sąrašų failai, kurių (preliminarioje) struktūroje generuojami Vardai ir Pavardės, kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t. Taip pat sugeneruojami atsitiktiniai namų darbų ir egzamino įvertinimų balai (`ND1 ND2 ND3 ND4 ND5 Egzaminas`).
-2. Atliekama programos veikimo greičio (spartos) analizė. <br>
-2.1 Jei failas jau egzistuoja anksčiau direktorijoje sukurtame **"files/"** aplankale, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. <br>
-2.2 Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą norima generuoti, ir tik tuomet vykdoma programos spartos analizė.
+1. Įvesties/išvesties << operatorių realizacija. Į konsolę įvedamas studento vardas, pavardė, įvedami 5-i namų darbų (ND) pažymiai, studento egzamino pažymys. Taip konsolėje realizuojant išvesties operatorių, atspausdinamas vardas, pavardė, ND pažymiai, egzamino pažymys ir galutinis įvertinimas.
+2. Toliau į konsolę įvedamas studentų skaičius (n), t. y. kokį failą norima generuoti. Taip sugeneruojami atsitiktiniai studentų sąrašų failai, kurių (preliminarioje) struktūroje generuojami Vardai ir Pavardės, kaip pvz. `Vardas1 Pavarde1`, `Vardas2 Pavarde2` ir t.t. Taip pat sugeneruojami atsitiktiniai namų darbų ir egzamino įvertinimų balai (`ND1 ND2 ND3 ND4 ND5 Egzaminas`).
+3. Atliekama programos veikimo greičio (spartos) analizė. <br>
+3.1 Jei failas jau egzistuoja anksčiau direktorijoje sukurtame **"files/"** aplankale, programos veikimo greičio (spartos) analizė atliekama su anksčiau sugeneruotu failu. <br>
+3.2 Jei failas dar neegzistuoja, pirmiausia  failas sugeneruojamas, vartotojui į konsolę įvedant, kokį failą norima generuoti, ir tik tuomet vykdoma programos spartos analizė.
 
 ## Testų metu naudoto kompiuterio parametrai: ##
 
